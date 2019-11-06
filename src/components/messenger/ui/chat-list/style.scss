@@ -1,6 +1,7 @@
 .chat-list {
   width: 100%;
-  flex-grow: 1;
+  height: calc(100% - 60px); // 60px - height of the message-counter component
+  overflow: auto;
 }
 
 .chat-item {
