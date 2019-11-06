@@ -1,0 +1,141 @@
+.chat-parts-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.chat-parts-pending {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__pending-text {
+    margin-right: 0.5rem;
+  }
+}
+
+.chat-parts {
+  width: 100%;
+  height: calc(100% - 80px);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+.chat-input-component {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  border-top: 1px solid #E9EDF2;
+}
+
+.chat-input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  &__pending {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #398BFF;
+  }
+  &__text-field {
+    flex-grow: 1;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__text-area {
+    border: none;
+    resize: none;
+    width: 100%;
+    padding: 0;
+    padding-top: 30px;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__enter-button {
+    cursor: pointer;
+    width: 80px;
+    background: #398BFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+}
+
+.chat-part {
+  $chat-part: &;
+  padding: 15px 0;
+  width: 55.88235294117647%;
+
+  &--yours {
+    align-self: flex-end;
+    #{ $chat-part }__wrapper {
+      background: #E9F5F4;
+    }
+  }
+
+  &__wrapper {
+    padding: 17px;
+    background: #F6F7F9;
+    border-radius: 8px 8px 8px 0px;
+  }
+
+  &__info {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  &__author {
+    font-weight: bold;
+    padding-right: 10px;
+  }
+
+  &__date {
+    font-size: 0.8em;
+    color: #B7C0C8;
+  }
+
+  &__text {
+    line-height: 20px;
+  }
+}

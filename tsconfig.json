@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "incremental": false,
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es2015",
+    "target": "es2017",
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "isolatedModules": false,
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "strictNullChecks": false
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

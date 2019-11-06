@@ -1,0 +1,1 @@
+export default 'MESSENGER_MODULE'

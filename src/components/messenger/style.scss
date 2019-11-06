@@ -1,0 +1,49 @@
+@import './transitions.scss';
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('/assets/fonts/TTNorms-Regular.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  font-family: 'TT Norms';
+}
+
+p {
+  margin: 0;
+}
+
+.messenger-app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.messenger-component {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.chat-list-component {
+  width: 30.61224489795918%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #F3F6F8;
+}
+
+.chat-parts-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 69.38775510204082%;
+  height: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}

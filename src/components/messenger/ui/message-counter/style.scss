@@ -1,0 +1,17 @@
+.message-counter {
+  width: 100%;
+  border-bottom: 1px solid #E9EDF2;
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+  }
+  &__title {
+    color: #656B77;
+    margin-right: 0.7em;
+  }
+  &__count {
+    color: #D2D8DE;
+  }
+}
